@@ -16,7 +16,7 @@ def head(filename, lines=5):
     from itertools import islice
     with open(filename, "r") as f:
         return list(islice(f, lines))
-    
+
 
 def fetch_and_cache(data_url, file, data_dir="data", force=False):
     """
@@ -103,7 +103,7 @@ def run_linear_regression_test(
             print('Your RMSE loss is: {}'.format(loss))
             return loss
         return loss < threshold
-    
+
 def run_linear_regression_test_optim(
     final_model, 
     process_data_fm, 
